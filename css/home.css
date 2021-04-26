@@ -4,6 +4,7 @@ body {
     background: linear-gradient(to right, #1D2671, #C33764);
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :-webkit-any(article, aside, nav, section) h1, h2, h4 {
@@ -16,15 +17,22 @@ body {
     width: 5%;
     height: auto;
     padding: 20px;
+    display: inline-block;
+    position: fixed;
 }
 
 /* Top Nav Bar */
 .topnav {
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .topnav a {
     float: left;
+    position: relative;
+    display: block;
     color: #cccccc;
     padding: 20px 20px;
     text-decoration: none;
@@ -79,3 +87,52 @@ h1, h2, h4 {
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
 }
+
+/* About */
+.about {
+    color: white;
+    padding: 250px 90px;
+    font-size: 24px;
+}
+
+.aboutme {
+    font-size: 20px;
+}
+
+/* Discord */
+.discord {
+    display: block;
+    width: auto;
+    margin: 0;
+}
+
+.container {
+    padding: 64px;
+}
+
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.column-66 {
+    float: left;
+    width: 66%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33
+        width: 100%;
+        text-align: center;
+}
+
