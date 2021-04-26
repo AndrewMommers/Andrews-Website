@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andrew Mommers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/home.css">
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+        </style>
+    </head>
+    <body>
+        <section class="topnav" id="myTopnav">
+            <a class="logo"></a>
+            <div class="topnav-right">
+                <a href="home.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#work">Work</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </section>
+        <section class="headqoute">
+            <div class="headqoute-1">
+                <h4>IT'S CODE</h4>
+            </div>
+            <div class="headqoute-2">
+                <h1>A Task That</h1>
+            </div>
+            <div class="headqoute-3">
+                <h2>Comes To Mind.</h2>
+            </div>
+        </section>
+        <script src="" async defer></script>
+        <script>
+            function myFunction() {
+                var x =document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
